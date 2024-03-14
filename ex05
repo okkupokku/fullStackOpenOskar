@@ -1,0 +1,8 @@
+participant user
+participant browser
+participant server
+
+browser->>server: HTTP POST request for JSON raw data
+server->>browser: status code 201 created, no redirection
+
+browser: add notes HTML elements by using DOM API
